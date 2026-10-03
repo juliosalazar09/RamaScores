@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estadísticas Deportivas Locales</title>
+  <meta name="description" content="Clasificaciones, calendarios y estadísticas de las ligas locales de fútbol campo, fútbol sala, baloncesto y vóleybol.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div class="cabecera-top">
+      <div class="logo">
+        <span class="balon">🏆</span>
+        <span>
+          Estadísticas Deportivas
+          <small>Ligas locales · fútbol, fútbol sala, baloncesto y vóleybol</small>
+        </span>
+      </div>
+      <nav>
+        <a href="#/" id="nav-inicio">Inicio</a>
+        <a href="#/clasificaciones" id="nav-clasif">Clasificaciones</a>
+        <a href="#/calendario" id="nav-calendario">Calendario</a>
+        <a href="#/jugadores" id="nav-jugadores">Jugadores</a>
+        <a href="#/envivo" id="nav-envivo">🔴 En vivo</a>
+        <a href="admin.html">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app">
+    <div class="cargando">
+      <div class="spinner"></div>
+      Cargando…
+    </div>
+  </main>
+
+  <footer class="pie">
+    Estadísticas Deportivas Locales · Datos gestionados desde el panel de administración
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
