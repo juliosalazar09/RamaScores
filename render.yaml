@@ -1,0 +1,22 @@
+# Render Blueprint: despliegue en un clic.
+# La base de datos se guarda en un disco persistente montado en /var/data.
+services:
+  - type: web
+    name: estadisticas-deportivas
+    runtime: node
+    plan: starter
+    buildCommand: echo "Sin dependencias que instalar"
+    startCommand: node server.js
+    envVars:
+      - key: NODE_VERSION
+        value: "22.18.0"
+      - key: DATA_DIR
+        value: /var/data
+      - key: ADMIN_USER
+        value: admin
+      - key: ADMIN_PASS
+        sync: false
+    disk:
+      name: datos
+      mountPath: /var/data
+      sizeGB: 1

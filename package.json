@@ -1,0 +1,17 @@
+{
+  "name": "estadisticas-deportivas",
+  "version": "1.0.0",
+  "description": "Web de estadisticas de ligas locales: futbol campo, futbol sala, baloncesto y voleybol",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "reset-db": "node -e \"require('fs').rmSync('./data/stats.db',{force:true}); console.log('base de datos borrada')\"",
+    "prod": "NODE_ENV=production node server.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "private": true
+}
